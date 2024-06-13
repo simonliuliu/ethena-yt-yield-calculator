@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>收益计算器</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="Ethena Logo" id="logo">
+        <h2>Ethena</h2>
+    </header>
+    <div class="container">
+        <h1>收益计算器</h1>
+        <form id="calculatorForm">
+            <label for="apy">APY (%)：</label>
+            <input type="number" id="apy" required>
+
+            <label for="period">周期数：</label>
+            <select id="period" required>
+                <option value="365">每日计息</option>
+                <option value="52">每周计息</option>
+                <option value="12">每月计息</option>
+            </select>
+
+            <label for="daysRemaining">剩余天数：</label>
+            <input type="number" id="daysRemaining" required>
+
+            <label for="ytAmount">YT sUSDe 数量：</label>
+            <input type="number" id="ytAmount" required>
+
+            <label for="enaPrice">ENA 当前价格：</label>
+            <input type="number" id="enaPrice" required>
+
+            <label for="totalPoints">总积分 (T)：</label>
+            <input type="number" id="totalPoints" placeholder="9.83">
+            <p class="hint">非必填，默认值为 9.83T</p>
+
+            <button type="button" onclick="calculateYield()">计算收益</button>
+        </form>
+        <div id="result"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
