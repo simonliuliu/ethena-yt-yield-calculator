@@ -7,6 +7,7 @@ body {
     height: 100vh;
     margin: 0;
     background-color: #f4f4f4;
+    -webkit-overflow-scrolling: touch; /* 优化微信浏览器滚动 */
 }
 
 header {
@@ -37,7 +38,7 @@ header h2 {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     width: 90%;
     max-width: 600px;
-    margin-top: 20px;
+    margin: 80px auto 20px auto; /* 确保容器不被 header 覆盖并居中 */
     box-sizing: border-box;
 }
 
