@@ -64,6 +64,7 @@ input, select {
     border-radius: 4px;
     width: 100%;
     box-sizing: border-box;
+    font-size: 16px; /* 确保选择框和输入框字体大小一致 */
 }
 
 button {
