@@ -89,10 +89,10 @@ button:hover {
 
 .hint {
     grid-column: 2 / span 1;
-    color: red;
-    font-size: 0.8em;
+    color: gray;
+    font-size: 0.7em;
     margin: 0;
-    padding-left: 10px;
+    padding-left: 0px;
 }
 
 @media (max-width: 600px) {
